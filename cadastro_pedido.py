@@ -1,5 +1,4 @@
 import lib
-import csv_sistema
 import cadastro_cliente
 import uuid
 import conexao

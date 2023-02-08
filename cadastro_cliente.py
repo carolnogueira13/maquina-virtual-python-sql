@@ -1,5 +1,4 @@
 import lib
-import csv_sistema
 import conexao
 import uuid
 import pyodbc
