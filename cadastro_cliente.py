@@ -10,6 +10,13 @@ def localiza_cliente():
     conn = conexao.conectar()
     cursor = conn.cursor()
 
+    cursor.execute(f"SELECT * FROM clientes")
+    rows = cursor.fetchall()
+
+    for row in rows:
+        print(row)
+ 
+
     indice = input("Digite o indice de qual cliente você deseja selecionar:\n")
     query = f"SELECT id FROM clientes WHERE id = ?"
     
@@ -65,7 +72,7 @@ def cadastrar():
 
     cursor.execute(create_table)
     
-    nome = input("Digite o nome do cliente:")
+    nome = input("Digite o nome do cliente: ")
     telefone = input("Digite o telefone do cliente: ")
     email = input("Digite o e-mail do cliente: ")
     

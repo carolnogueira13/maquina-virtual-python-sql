@@ -30,7 +30,6 @@ while(True):
     elif opcao == "2":
         cadastro_cliente.listar()
     elif opcao == "3":
-        cadastro_cliente.listar()
         cadastro_pedido.cadastrar()
     elif opcao == "4":
         cadastro_pedido.listar()
