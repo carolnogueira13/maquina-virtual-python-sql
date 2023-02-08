@@ -29,8 +29,6 @@ def localiza_cliente():
     return id
     
 
-
-
 def listar():
     lib.limpar_tela();
 

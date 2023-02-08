@@ -10,7 +10,7 @@ print("Bem vindo ao programa para pedidos de clientes")
 print("-" * 100)
 
 print("Inicialmente iremos realizar a sua conexão com o banco de dados!")
-coon = conexao.conectar()
+conn = conexao.conectar()
 
 print("Conexão bem-sucedida!")
 
@@ -39,6 +39,8 @@ while(True):
         lib.mensagem("Opcao inválida")
     
     lib.limpar_tela()
+
+conn.close()
     
     
     
