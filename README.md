@@ -12,6 +12,5 @@ def conectar():
     password = <senha>
     return pyodbc.connect('DRIVER={ODBC Driver 18 for SQL Server};SERVER='+server+';DATABASE='+database+';ENCRYPT=yes;UID='+username+';PWD='+ password)
 ```
-
-###### Os arquivos ainda precisam de melhoras, posteriormente pretendo adicionar a biblioteca pandas e o SQLAlchemy que é uma API de mapeamento objeto-relacional e permite trabalhar com os bancos relacionais e Python de melhor forma.  
+ 
     
