@@ -37,12 +37,13 @@ def listar():
 
     table_name = 'clientes'
     select_all = f"SELECT * FROM {table_name}"
-
+    
     cursor.execute(select_all)
     rows = cursor.fetchall()
 
-    for row in rows:
-        print(row)
+    arr_dict = list(map(lib.tuple_to_dict, rows))
+    print(arr_dict)
+    
 
     conn.close()
 

@@ -2,17 +2,13 @@
 
 import lib
 import cadastro_cliente
-import cadastro_pedido
+import cadastro_pedido 
 import conexao
 
 print("-" * 100)
 print("Bem vindo ao programa para pedidos de clientes")
 print("-" * 100)
 
-print("Inicialmente iremos realizar a sua conexão com o banco de dados!")
-conn = conexao.conectar()
-
-print("Conexão bem-sucedida!")
 
 
 while(True):
@@ -40,7 +36,6 @@ while(True):
     
     lib.limpar_tela()
 
-conn.close()
     
     
     
